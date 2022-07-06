@@ -1,12 +1,12 @@
-const gulp 			= require('gulp');
-const sass 			= require('gulp-sass');
-const browserSync	= require('browser-sync').create();
-const autoprefix	= require('gulp-autoprefixer');
-const cleanCSS		= require('gulp-clean-css');
-const uglifyJS		= require('gulp-uglify');
-const htmlmin 		= require('gulp-htmlmin');
-const babel 		= require('gulp-babel' );
-const concat		= require('gulp-concat');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const autoprefix = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const uglifyJS = require('gulp-uglify');
+const htmlmin = require('gulp-htmlmin');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
 
 gulp.task('styles', styles);
 gulp.task('sctipts', sctipts);
@@ -21,7 +21,7 @@ gulp.task('build', gulp.parallel('stylesBuild', 'sctiptsBuild', 'htmlsBuild'));
 gulp.task('serve', watch);
 
 // Build
-function stylesBuild(){
+function stylesBuild() {
 	return gulp.src('src/sass/main.sass')
 		.pipe(sass({
 			errorLogToConsole: true
@@ -37,10 +37,10 @@ function stylesBuild(){
 		.pipe(gulp.dest('build/css'));
 }
 
-function sctiptsBuild(){
+function sctiptsBuild() {
 	return gulp.src(['src/js/jquery-3.4.1.min.js', 'src/js/main.js'])
 		.pipe(babel({
-			 presets:  ['env']
+			presets: ['env']
 		}))
 		.pipe(uglifyJS({
 			toplevel: true
@@ -49,14 +49,14 @@ function sctiptsBuild(){
 		.pipe(gulp.dest('build/js/'));
 }
 
-function htmlsBuild(){
+function htmlsBuild() {
 	return gulp.src('src/**/*.html')
-		.pipe(htmlmin({ collapseWhitespace:  true }))
+		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(gulp.dest('build/'));
 }
 
 // Dev
-function styles(){
+function styles() {
 	return gulp.src('src/sass/main.sass')
 		.pipe(sass({
 			errorLogToConsole: true
@@ -66,20 +66,19 @@ function styles(){
 		.pipe(browserSync.stream());
 }
 
-function sctipts(){
-	return gulp.src(['src/js/jquery-3.4.1.min.js', 'src/js/main.js'])
+function sctipts() {
+	return gulp.src(['src/js/jquery-3.4.1.min.js', 'src/js/jquery.arcticmodal-0.3.min.js', 'src/js/slick.min.js', 'src/js/main.js'])
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('dev/js/'))
 		.pipe(browserSync.stream());
 }
-
-function htmls(){
+function htmls() {
 	return gulp.src('src/**/*.html')
 		.pipe(gulp.dest('dev/'))
 		.pipe(browserSync.stream());
 }
 
-function watch(){
+function watch() {
 	browserSync.init({
 		server: {
 			baseDir: './dev'

@@ -1,0 +1,989 @@
+.video__box
+   position: relative
+   width: 100%
+   height: 867px
+   margin: 0 auto
+   overflow: hidden
+.video__pic
+   width: 100%
+   position: relative
+   z-index: 1
+   object-fit: cover
+   height: 100%
+.youtube-link .svg, .youtube-link path 
+   transition: 0.5s
+.youtube-link
+   position: absolute
+   left: 50%
+   top: 50%
+   margin-left: -88px
+   margin-top: -88px
+   z-index: 2
+   width: 176px
+   height: 176px
+   transition: 1s
+   background: transparent
+   border: none
+   &:hover 
+      transform: scale(1.1)
+      // #one1
+      //    fill: white
+      // #two
+      //    fill: #CE20F3
+.grtvideo-popup
+  position: fixed
+  top: 0px
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.85)
+  z-index: 99999
+  padding-top: 100px
+.grtvideo-popup-content
+  margin-top: 50px
+  width: 95%
+  max-width: 850px
+  margin-left: auto
+  margin-right: auto
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+  position: relative
+.grtvideo-popup-close 
+  position: absolute
+  top: -35px
+  right: 0
+  color: #FFF
+  font-size: 25px
+  cursor: pointer
+  transition: 0.5s
+  &:hover 
+      transform: rotate(90deg)
+.grtyoutube-iframe 
+   width: 100%
+   height: 480px
+.mult 
+  padding: 60px 0 228px
+  position: relative
+  margin-top: -105px
+.mult__pic 
+  margin-left: -220px
+  margin-right: -13px
+  top: 10px
+  position: relative
+.mult__box 
+  align-items: center
+  position: relative
+.mult__fig
+  position: absolute
+  left: 0px
+  z-index: -1
+  top: 0
+.mult__name
+  margin-bottom: 47px
+.mult__content
+  max-width: 793px
+  flex: 1 0 auto
+.mult__text
+  line-height: 140%
+  margin-bottom: 20px
+  &:last-child 
+    margin-bottom: 0
+.map 
+   padding: 218px 0 150px
+   position: relative
+   .container 
+      max-width: 1551px
+   h2
+      text-align: center
+.map__fig
+   position: absolute
+   top: 0
+   left: 0%
+   z-index: -1
+.map__sub
+   text-align: center
+   line-height: 140%
+   margin: 15px auto 0
+   max-width: 777px
+.map__box
+   width: 100%
+   margin: 89px auto 0
+.map__wrap
+   position: relative
+   width: max-content
+   &:nth-child(2n)
+      margin-left: auto
+      .map__content
+         margin-left: 0
+      .map__pic
+         left: inherit
+         right: -183px
+   &:nth-child(2)
+      margin-bottom: 68px
+      .map__pic
+         top: -72px
+   &:nth-child(3)
+      .map__pic
+         top: -33px
+         left: -157px
+.map__item
+   display: flex
+   align-items: center
+   justify-content: space-between
+   padding: 40px 50px 55px
+   width: 716px
+   height: auto
+   background: #080F32
+   margin-bottom: 11px
+   clip-path: polygon(0% 18%, 5% 0%, 95% 0%, 100% 16%, 100% 84%, 95% 100%, 6% 100%, 0 87%)
+.map__pic
+   position: absolute
+   left: -183px
+   top: -39px
+   z-index: 2
+   max-width: 444px
+.map__content
+   max-width: 450px
+   margin-left: auto
+.map__name
+   font-weight: 700
+   font-size: 32px
+   line-height: 32px
+   font-family: 'Druk Wide'
+   margin-bottom: 19px
+.map__list 
+   margin-left: 11px
+   li 
+      margin-bottom: 20px
+      display: flex
+      &:last-child
+         margin-bottom: 0
+      &::before
+         content: ""
+         display: inline-block
+         background: #FFF
+         width: 5px
+         height: 5px
+         border-radius: 50px
+         flex: 1 0 auto
+         max-width: 5px
+         margin-right: 10px
+         margin-top: 10px
+.map__line
+   position: absolute
+   left: 50%
+   margin-left: -6px
+   top: 546px
+.items 
+   padding: 126px 0 70px
+   h2 
+      text-align: center
+   .container 
+      max-width: 1763px
+.items__slider
+   margin: 50px -8px 0
+   width: 1743px
+   .slick-list 
+      overflow: visible
+.items__el
+   height: auto
+   padding: 45px 30px 20px
+   text-align: center
+   position: relative
+   display: flex
+   margin: 0 8px
+   clip-path: polygon(0% 11%, 9% 0%, 91% 0%, 100% 11%, 100% 89%, 91% 100%, 8% 100%, 0 89%)
+   &:hover 
+      .items__name
+         color: #CE20F3
+   &:nth-child(1), &:nth-child(5)
+      background: linear-gradient(227.77deg, #1E9FEA -7.6%, #491281 70.84%)
+      .items__info
+         background: #2782D4
+   &:nth-child(2), &:nth-child(6)
+      background: linear-gradient(227.77deg, #2BD870 -7.6%, #10312A 100.75%)
+      .items__info
+         background: #1DCD6B
+   &:nth-child(3), &:nth-child(7)
+      background: linear-gradient(227.77deg, #E2CE1A -7.6%, #CC4E07 100.75%)
+      .items__info
+         background: #BC5B05
+   &:nth-child(4), &:nth-child(8)
+      background: linear-gradient(225.7deg, #CA23F3 -6.08%, #410060 100.72%)
+      .items__info
+         background: #690787
+.items__pic
+   width: 100%
+   object-fit: cover
+   height: 300px
+.items__info
+   align-items: center
+   width: 114px
+   height: 40px
+   justify-content: center
+   position: absolute
+   top: 20px
+   left: 30px
+   clip-path: polygon(0% 23%, 9% 0%, 91% 0%, 100% 23%, 100% 81%, 91% 100%, 8% 100%, 0 76%)
+.items__sum
+   font-weight: 800
+   font-size: 14px
+   line-height: 17px
+   margin-left: 11px
+.items__name
+   font-weight: 700
+   font-size: 24px
+   line-height: 24px
+   font-family: 'Druk Wide'
+   margin-bottom: 14px
+   color: #fff
+   display: block
+.items__text
+   font-size: 16px
+   line-height: 120%
+.items__wrap
+   width: 1920px
+   padding-right: 200px
+.accordion-container 
+   position: relative
+   height: auto
+   max-width: 1146px
+   width: 100%
+   margin: 63px auto 0
+   background: linear-gradient(74.01deg, #282696 -1.04%, #0A154F 105.06%)
+   padding: 15px 40px
+   clip-path: polygon(0% 6%, 4% 0%, 96% 0%, 100% 7%, 100% 94%, 96% 100%, 4% 100%, 0px 95%)
+.set
+   position: relative
+   width: 100%
+   height: auto
+   margin-bottom: 10px
+   transition: 0.5s
+   &:hover 
+      a 
+         p 
+            color: #CE20F3
+   &:last-child
+      a
+         border: none
+      .content 
+         border: none
+.set>a
+   display: block
+   text-decoration: none
+   transition: all 0.2s linear
+   height: auto
+   width: 100%
+   background: url(img/up.svg) no-repeat 100% 50%
+   padding: 40px 0
+   border-bottom: 1px solid #393DA2
+   transition: 0.5s
+   p 
+      font-weight: 700
+      font-size: 24px
+      line-height: 38px
+      color: #FFFFFF
+      font-family: 'Druk Wide'
+      transition: 0.5s
+      padding-right: 70px
+.set>a.active
+   padding-bottom: 15px
+   background: url(img/down.svg) no-repeat 100% 50%
+   border: none
+   padding-top: 18px
+.content 
+   position: relative
+   width: 100%
+   height: auto
+   display: none
+   overflow: auto
+   box-sizing: border-box
+   padding-bottom: 25px
+   border-bottom: 1px solid #393DA2
+   p 
+      line-height: 140%
+      font-size: 16px
+      max-width: 1010px
+.faq 
+   padding: 200px 0 70px
+   h2 
+      text-align: center
+.join 
+   padding: 21px 0
+   h2 
+      font-size: 86px
+      line-height: 86px
+.join__box
+   align-items: center
+.join__content
+   max-width: 700px
+   flex: 1 0 auto
+.join__text
+   line-height: 22px
+   margin-top: 50px
+   max-width: 549px
+.join__btn
+   width: 220px
+   height: 55px
+   margin-top: 40px
+   .svg 
+      margin-left: 10px
+.join__pic 
+   position: relative
+   top: -2px
+   left: -232px
+.octagonWrap 
+   float: left
+   position: relative
+.octagon 
+   position: absolute
+   top: 0
+   right: 0 
+   bottom: 0 
+   left: 0
+   overflow: hidden
+.octagon:before 
+   position: absolute
+   top: 0
+   right: 0
+   bottom: 0
+   left: 0
+   transform: rotate(45deg)
+   background: transparent
+   content: ''
+   border: 3px solid #CE20F3
+.preloader 
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   background: white
+   z-index: 100
+#loader
+   display: block
+   position: relative
+   left: 50%
+   top: 50%
+   width: 150px
+   height: 150px
+   margin: -75px 0 0 -75px
+   border-radius: 50%
+   border: 3px solid transparent
+   border-top-color: #9370DB
+   -webkit-animation: spin 2s linear infinite
+   animation: spin 2s linear infinite
+#loader:before 
+   content: ""
+   position: absolute
+   top: 5px
+   left: 5px
+   right: 5px
+   bottom: 5px
+   border-radius: 50%
+   border: 3px solid transparent
+   border-top-color: #BA55D3
+   -webkit-animation: spin 3s linear infinite
+   animation: spin 3s linear infinite
+#loader:after 
+   content: ""
+   position: absolute
+   top: 15px
+   left: 15px
+   right: 15px
+   bottom: 15px
+   border-radius: 50%
+   border: 3px solid transparent
+   border-top-color: #FF00FF
+   -webkit-animation: spin 1.5s linear infinite
+   animation: spin 1.5s linear infinite
+@-webkit-keyframes spin 
+   0% 
+      -webkit-transform: rotate(0deg)
+      -ms-transform: rotate(0deg)
+      transform: rotate(0deg)
+   100% 
+      -webkit-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      transform: rotate(360deg)
+@keyframes spin 
+   0%  
+      -webkit-transform: rotate(0deg)
+      -ms-transform: rotate(0deg)
+      transform: rotate(0deg)
+   100% 
+      -webkit-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      transform: rotate(360deg)
+.preloader-remove 
+   opacity: 0
+   z-index: -10
+@keyframes modal-video 
+	from 
+		opacity: 0
+	to 
+		opacity: 1
+@keyframes modal-video-inner 
+	from 
+		transform: translate(0, 100px)
+	to 
+		transform: translate(0, 0)
+.modal-video 
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   background-color: rgba(0, 0, 0, 0.7)
+   z-index: 1000000
+   cursor: pointer
+   opacity: 1
+   animation-timing-function: ease-out
+   animation-duration: 0.3s
+   animation-name: modal-video
+   -webkit-transition: opacity 0.3s ease-out
+   -moz-transition: opacity 0.3s ease-out
+   -ms-transition: opacity 0.3s ease-out
+   -o-transition: opacity 0.3s ease-out
+   transition: opacity 0.3s ease-out
+.modal-video-close 
+   opacity: 0
+.modal-video-close .modal-video-movie-wrap 
+   -webkit-transform: translate(0, 100px)
+   -moz-transform: translate(0, 100px)
+   -ms-transform: translate(0, 100px)
+   -o-transform: translate(0, 100px)
+   transform: translate(0, 100px)
+.modal-video-body 
+   max-width: 1920px
+   width: 100%
+   height: 100%
+   margin: 0 auto
+   display: table
+@media screen and (min-width: 992px) 
+	.modal-video-body 
+      width: calc(100% - 40%)
+.modal-video-inner 
+   display: table-cell
+   vertical-align: middle
+   width: 100%
+   height: 100%
+.modal-video-movie-wrap
+   width: 100%
+   height: 0
+   position: relative
+   padding-bottom: 56.25%
+   background-color: #333
+   animation-timing-function: ease-out
+   animation-duration: 0.3s
+   animation-name: modal-video-inner
+   -webkit-transform: translate(0, 0)
+   -moz-transform: translate(0, 0)
+   -ms-transform: translate(0, 0)
+   -o-transform: translate(0, 0)
+   transform: translate(0, 0)
+   -webkit-transition: -webkit-transform 0.3s ease-out
+   -moz-transition: -moz-transform 0.3s ease-out
+   -ms-transition: -ms-transform 0.3s ease-out
+   -o-transition: -o-transform 0.3s ease-out
+   transition: transform 0.3s ease-out
+.modal-video-movie-wrap iframe 
+   position: absolute
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+.modal-video-close-btn 
+   position: absolute
+   z-index: 2
+   top: -35px
+   right: 0px
+   display: inline-block
+   width: 35px
+   height: 35px
+   overflow: hidden
+   border: none
+   background: transparent
+   transition: 0.5s
+   &:hover 
+      transform: scale(1.2)
+.modal-video-close-btn:before
+   transform: rotate(45deg)
+.modal-video-close-btn:after 
+   transform: rotate(-45deg)
+.modal-video-close-btn:before,
+.modal-video-close-btn:after 
+   content: ""
+   position: absolute
+   height: 2px
+   width: 100%
+   top: 50%
+   left: 0
+   margin-top: -1px
+   background: rgb(65, 183, 252)
+   border-radius: 5px
+   margin-top: -6px
+.header .header__box_block
+   align-items: center
+   margin-top: 38px
+.block 
+   &__links 
+      position: relative
+      top: -23px
+      a:first-child 
+         margin-right: 15px
+   &__sum 
+      font-weight: 700
+      font-size: 32px
+      line-height: 32px
+      text-align: center
+      color: #FFFFFF
+      font-family: 'Druk Wide'
+      display: block
+   &__total 
+      position: relative
+      top: -23px
+      left: -35px
+      flex-direction: column
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #080930
+      clip-path: polygon(0% 9%, 7% 0%, 93% 0%, 100% 10%, 100% 19%, 100% 90%, 94% 100%, 6% 100%, 0 88%)
+      padding: 29px 26px 40px
+      p 
+         font-weight: 700
+         font-size: 18px
+         line-height: 120%
+         text-align: center
+         color: #FFFFFF
+   &__wrap 
+      align-items: center
+      justify-content: space-between
+   &-item 
+      align-items: center
+      width: 100%
+      max-width: 243px
+      margin-bottom: 20px
+      &__name 
+         font-weight: 300
+         font-size: 14px
+         line-height: 120%
+      &__num 
+         font-weight: 700
+         font-size: 24px
+         line-height: 24px
+         font-family: 'Druk Wide'
+      &:nth-child(1)
+         .block-item__fig
+            background: #41B7FC
+      &:nth-child(2)
+         .block-item__fig
+            background: #41FC5F
+      &:nth-child(3)
+         .block-item__fig
+            background: #CE20F3
+      &:nth-child(4)
+         .block-item__fig
+            background: #F32085
+      &__fig 
+         clip-path: polygon(0% 24%, 50% 0%, 100% 22%, 100% 78%, 50% 100%, 100% 100%, 50% 100%, 0 78%)
+         width: 50px
+         height: 56px
+         display: flex
+         align-items: center
+         justify-content: center
+         font-weight: 700
+         font-size: 15px
+         line-height: 15px
+         color: #FFFFFF
+         font-family: 'Druk Wide'
+         flex: 1 0 auto
+         max-width: 50px
+         margin-right: 18px
+   &__flex
+      align-items: center
+      margin: 35px 0 60px
+      flex-wrap: wrap
+      width: 100%
+      max-width: 517px
+      justify-content: space-between
+   &__buy 
+      font-size: 14px
+      line-height: 140%
+   &__link 
+      color: #C727F3
+      &:hover
+         color: #43B4FB
+   &__name
+      font-weight: 700
+      font-size: 32px
+      line-height: 32px
+      color: #FFFFFF
+      font-family: 'Druk Wide'
+      margin-bottom: 13px
+   &-wrap 
+      position: relative
+      width: 566px
+      height: 517px
+      background: linear-gradient(227.77deg, #1E9FEA -7.6%, #491281 70.84%)
+      border-radius: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 70px
+      &__logo 
+         position: absolute
+         left: 30px
+         top: 30px
+         width: 35px
+      &__pic 
+         width: 500px
+         object-fit: cover
+.block__btn2
+   width: auto
+   padding: 0 22px
+.info 
+   padding: 100px 0 20px
+   &__block 
+      background: #080930
+      clip-path: polygon(0% 24%, 50% 0%, 100% 22%, 100% 78%, 50% 100%, 100% 100%, 50% 100%, 0 78%)
+      width: 45px
+      height: 56px
+      display: flex
+      align-items: center
+      justify-content: center
+      flex: 1 0 auto
+      max-width: 50px
+      padding-bottom: 2px
+   &__name 
+      margin-left: 11px
+   &__flex 
+      align-items: center
+   &__btn
+      color: #41B7FC
+      width: max-content
+      min-width: 176px
+      height: 44px
+      padding: 0 20px
+      font-weight: 400
+      .left-bottom 
+         bottom: 4px
+         left: -2px
+      .left-up
+         top: 5px
+         left: -2px
+   &__title
+      font-weight: 700
+      font-size: 32px
+      line-height: 32px
+      font-family: 'Druk Wide'
+      color: #FFFFFF
+      margin-bottom: 30px
+.adaptive-table 
+   width: 100%
+   box-sizing: border-box
+   border-collapse: collapse !important
+   border-spacing: 0px 15px !important
+   td 
+      padding: 27px 0px
+      font-weight: 400
+      font-size: 14px
+      box-sizing: border-box
+      color: #FFFFFF
+      &:last-child
+         margin-left: 0
+         padding-right: 0px
+         text-align: center
+         padding-left: 0px
+@media (max-width: 1199px) 
+   .adaptive-table
+      a 
+         font-size: 12px
+   .adaptive-table
+      thead, .profile__head
+         display: none
+   .adaptive-table 
+     tbody, .adaptive-table, 
+         width: 100%
+         display: flex
+         flex-wrap: wrap
+         justify-content: space-between
+         border: 0 none
+         overflow: hidden !important
+         padding-top: 10px
+         padding-bottom: 10px
+   .adaptive-table
+      tr 
+         margin: 10px 0
+         width: 48%
+         max-width: 100%
+         display: flex
+         flex-direction: column
+         border: 1px solid #456BA5 !important
+   .adaptive-table
+      td, .profile__row .active 
+         display: flex
+         justify-content: space-between
+   .adaptive-table 
+      td[data-label] 
+         justify-content: space-between
+         text-align: right
+   .adaptive-table
+      td[data-label]
+         &:before 
+            line-height: 120%
+            content: attr(data-label)
+            display: block
+            white-space: inherit
+            opacity: .7
+            text-align: left
+            margin-right: 20px
+.content-table
+   border-collapse: collapse
+   margin-bottom: 17px
+   tr 
+      border-bottom: 1px solid #456BA5
+      box-sizing: border-box
+      &:last-child
+         border: none
+   thead
+      tr
+         padding: 0px 0px 5px
+         border-spacing: initial
+         box-shadow: initial
+         td
+            font-weight: 400
+            font-size: 14px 
+            color: white
+            padding: 0px 0px 20px
+            font-weight: 700 !important
+            &:last-child
+               padding-left: 40px
+   @media (max-width: 768px) 
+      background: transparent
+      margin-top: 0
+.content-table__row
+   border-collapse: separate
+   border-spacing: inherit
+   background: transparent
+   margin-bottom: 15px
+   &:nth-child(2)
+      .token__progress
+         width: 20%
+   &:nth-child(3)
+      .token__progress
+         width: 48%
+   &:nth-child(4)
+      .token__progress
+         width: 71%
+   td:nth-child(1)
+      text-align: left
+      @media ( max-width: 1199px )
+         padding-left: 15px
+.content-table
+   border-collapse: separate
+   tr 
+      @media ( max-width: 991px )
+         margin: 15px
+         &:nth-child(n+7)
+            display: none
+      @media ( max-width: 767px )
+         width: 100%
+         overflow: hidden
+.content-table thead tr
+   background: transparent
+   td 
+      color: #FFFFFF !important
+      font-weight: 400
+      font-size: 14px
+      line-height: 14px
+.content-table tbody tr:first-child td:nth-child(2)
+   width: auto
+.content-table_block
+   .content-table__link .icon, .content-table__send .icon
+      width: 14px
+      height: 14px
+      margin-left: 9px
+   td 
+      padding: 22px 0
+   thead tr td:last-child
+      padding-left: 0
+   td:last-child
+      display: table-cell
+      padding-left: 0
+      padding-right: 40px
+.content-table
+   border-collapse: separate !important
+   border-spacing: 0px !important
+   thead 
+      td
+         border-bottom: 1px solid #456BA5
+         padding-bottom: 5px
+         &:first-child
+            border-radius: 5px 0 0 0px !important
+         &:last-child
+            border-radius: 0px 5px 0 0px !important
+      td:first-child
+         border-radius: 0px 0 0 5px
+         border-right: none
+         border-top: none
+      td:last-child
+         border-radius: 0px 0px 5px 0px
+         border-left: none
+         border-top: none
+   td
+      border: none
+      border-bottom: 1px solid #456BA5
+/*POPUP*/
+.popup 
+   &__item 
+      position: relative
+   &__value 
+      position: absolute
+      right: 16px
+      top: 40px
+      font-weight: 300
+      font-size: 14px
+      line-height: 100%
+      color: #FFFFFF
+   &__name 
+      text-align: center
+      font-weight: 700
+      font-size: 32px
+      line-height: 32px
+      color: #FFFFFF
+      font-family: 'Druk Wide'
+      margin-bottom: 35px
+   &__info 
+      font-weight: 600
+      font-size: 14px
+      margin-bottom: 24px
+      line-height: 100%
+   &__form 
+      width: 100%
+   &__label 
+      font-weight: 300
+      font-size: 12px
+      line-height: 100%
+      color: #FFFFFF
+      margin-bottom: 8px
+      display: block
+   &__input 
+      width: 100%
+      height: 55px
+      background: #080930
+      border-radius: 10px
+      padding-left: 24px
+      color: #FFFFFF
+      margin-bottom: 10px
+      transition: 0.5s
+      border: 1px solid transparent
+      &:focus 
+         border: 1px solid #41B7FC
+         transition: 0.5s
+   &__title 
+      text-align: center
+      font-weight: 700
+      font-size: 16px
+      line-height: 120%
+      color: #FFFFFF
+      font-family: 'Druk Wide'
+      margin: 40px 0 30px
+   &__btn 
+      margin-top: 40px
+      width: 100%
+      border: none
+      clip-path: polygon(0% 23%, 2% 0%, 98% 0%, 100% 18%, 100% 79%, 98% 100%, 2% 100%, 0 80%)
+.box-modal__close:hover 
+  transform: rotate(90deg)
+.box-modal__close 
+   position: absolute
+   top: 14px
+   right: 14px
+   transition: all 0.5s ease
+   z-index: 100
+   cursor: pointer
+   @media ( max-width: 576px )
+      right: 15px
+      top: 15px
+.box-modal 
+   position: relative
+.popup-call__box 
+   position: absolute
+   margin-left: -288px
+   top: 50%
+   left: 50%
+   margin-top: -300px
+   box-sizing: border-box
+   background: #FFFFFF
+   width: 566px
+   height: auto
+   background: linear-gradient(49.25deg, #06055A 16.99%, #0A185F 88.78%)
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2)
+   padding: 48px 95px 67px
+   clip-path: polygon(0% 6%, 4% 0%, 96% 0%, 100% 7%, 100% 94%, 96% 100%, 4% 100%, 0px 95%)
+   @media screen and (max-width: 768px)
+      width: 500px
+      margin-left: -250px
+      padding: 40px 20px
+   @media screen and (max-width: 576px)
+      width: 100% !important
+      left: 0 !important
+      margin-left: 0 !important
+input::-webkit-input-placeholder 
+   color: #FFFFFF !important
+   font-size: 14px
+input::-moz-placeholder 
+   color: #FFFFFF !important
+   font-size: 14px
+input:-ms-input-placeholder 
+   color: #FFFFFF !important
+   font-size: 14px
+input:-moz-placeholder 
+   color: #FFFFFF !important
+   font-size: 14px
+.popup__check label
+   text-align: left
+   font-weight: 400
+   font-size: 18px
+   line-height: 100%
+   color: #FFFFFF
+   margin: 0 auto 5px
+   width: 169px
+   cursor: pointer
+   transition: 0.5s
+input#agree 
+   margin-right: 14px
+   width: 25px
+   height: 25px
+   border: 1px solid #D7D7E4
+   flex: 1 0 auto
+   max-width: 20px
+.popup__check
+   margin-bottom: 10px
+   cursor: poiner 
+   transition: 0.5s
+   &:hover 
+      label 
+         color: #41B7FC
+input[type=checkbox] 
+   display: none
+input[type=checkbox]+label:before 
+   content: "\2713"
+   color: transparent
+   display: inline-block
+   font-size: 18px
+   line-height: 25px
+   margin: -5px 12px 0 0
+   text-align: center
+   vertical-align: middle
+   transition: color ease .3s
+   width: 25px
+   height: 25px
+   border: 2px solid #2324AA
+   border-radius: 3px
+input[type=checkbox]:checked+label:before 
+   color: white
+   background: #2324AA

@@ -1,0 +1,174 @@
+body
+   background: url(img/bg.png) no-repeat center center / cover
+   font-weight: 400
+   font-family: 'Inter', sans-serif
+   font-size: 18px
+   line-height: 140% 
+   color: #FFFFFF
+a
+   text-decoration: none
+   box-sizing: border-box
+   &:hover 
+      color: #CE20F3
+.container
+   padding: 0 15px
+   max-width: 1465px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.btn
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: all 0.5s ease
+   width: 180px
+   height: 50px
+   position: relative
+   z-index: 0
+   font-weight: 800
+   font-size: 14px
+   color: #FFFFFF
+   position: relative
+.left-up
+   background: #CD21F3
+   transform: rotate(131deg)
+   top: 5px
+   left: -1px
+.left-bottom
+   background: #CD21F3
+   transform: rotate(45deg)
+   bottom: 5px
+   left: -1px
+.right-up
+   background: #43B4FB
+   transform: rotate(50deg)
+   top: 5px
+   right: -2px
+.right-bottom
+   background: #43B4FB
+   transform: rotate(-51deg)
+   bottom: 5px
+   right: -2px
+.btn1
+   div
+      position: absolute
+      width: 14px
+      height: 2px
+   &::before
+      content: ""
+      position: absolute
+      z-index: -1
+      inset: 0
+      padding: 2px
+      clip-path: polygon(0% 23%, 6% 0%, 95% 0%, 100% 23%, 100% 77%, 95% 100%, 6% 100%, 0 80%)
+      background: linear-gradient(to right, #CD21F3, #43B4FB)
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+      mask: linear-gradient(#fff 0 0) content-box, dlinear-gradient(#fff 0 0)
+      -webkit-mask-composite: xor
+      mask-composite: exclude
+   &:hover
+.btn2
+   background: linear-gradient(90.34deg, #CE20F3 0.24%, #41B7FC 99.71%)
+   clip-path: polygon(0% 23%, 5% 0%, 95% 0%, 100% 19%, 100% 88%, 94% 100%, 6% 100%, 0 80%)
+   &:hover
+      color: #41B7FC
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-family: 'Druk Wide'
+   font-style: normal
+   font-weight: 700
+   font-size: 60px
+   line-height: 60px
+   color: #FFFFFF
+   margin: 0
+.grad 
+   background-image: linear-gradient(to right, #CE20F3, #41B7FC)
+   color: transparent
+   -webkit-background-clip: text
+   background-clip: text
+h2
+   font-family: 'Druk Wide'
+   font-style: normal
+   font-weight: 700
+   font-size: 60px
+   line-height: 60px
+   color: #FFFFFF
+   margin: 0
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: all 0.5s ease
+a
+   transition: all 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: all 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   &:focus
+      outline: none
+input
+   box-sizing: border-box
+   &:focus-visible
+      outline: initial
+path
+   transition: 0.5s
+div 
+   box-sizing: border-box
+
+// .wrapper
+//   position: relative
+//   transform-origin: 50% 100% 0
+// .wrapper::before,
+// .wrapper::after 
+//   position: absolute
+//   content: ''
+//   width: 15px
+//   height: 27px
+// .wrapper::before 
+//    left: -15px
+//    bottom: -2px
+//    background: linear-gradient(to right, #CD21F3, #43B4FB)
+//    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+//    mask: linear-gradient(#fff 0 0) content-box, dlinear-gradient(#fff 0 0)
+//    -webkit-mask-composite: xor
+//    mask-composite: exclude
+// .wrapper::after 
+//   right: -15px
+//   top: -2px
+//   border-top: 2px solid #f00
+//   border-right: 2px solid #f00
+// .corner 
+//   position: absolute
+//   width: 21px
+//   height: 21px
+//   transform: 50% 50% 0
+//   transform: rotate(45deg)
+// .left 
+//   top: 3px
+//   left: -11px
+//   border-left: 2px solid #f00
+// .right 
+//   bottom: 3px
+//   right: -11px
+//   border-right: 2px solid #f00
