@@ -1707,6 +1707,35 @@ input[type=checkbox]:checked + label:before {
   right: -24px;
   border-left: 12px solid #43B4FB;
 }
+.butn_borderred {
+  height: 52px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%);
+  border-image-slice: 1;
+}
+.butn_borderred:hover {
+  color: #43B4FB;
+  box-shadow: none;
+}
+.butn_borderred:before, .butn_borderred:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  width: 12px;
+  height: 53px;
+}
+.butn_borderred:before {
+  left: -10px;
+  background: url(./img/btn_left.svg) top right no-repeat;
+  background-size: 100%;
+}
+.butn_borderred:after {
+  right: -10px;
+  background: url(./img/btn_right.svg) top left no-repeat;
+  background-size: 100%;
+}
 
 .footer {
   padding: 92px 0 53px;

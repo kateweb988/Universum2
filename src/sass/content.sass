@@ -1023,3 +1023,28 @@ input[type=checkbox]:checked+label:before
       &:after
          right: -24px
          border-left: 12px solid #43B4FB
+   &_borderred
+      height: 52px
+      border-top: 2px solid transparent
+      border-bottom: 2px solid transparent
+      border-image: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%)
+      border-image-slice: 1
+      &:hover
+         color: #43B4FB
+         box-shadow: none
+      &:before,
+      &:after
+         content: ''
+         display: block
+         position: absolute
+         top: -3px
+         width: 12px
+         height: 53px
+      &:before
+         left: -10px
+         background: url(./img/btn_left.svg) top right no-repeat
+         background-size: 100%
+      &:after
+         right: -10px
+         background: url(./img/btn_right.svg) top left no-repeat
+         background-size: 100%
