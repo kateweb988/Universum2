@@ -1667,54 +1667,6 @@ input[type=checkbox]:checked + label:before {
   background: #2324AA;
 }
 
-.button {
-  display: inline-block;
-  position: relative;
-  width: 184px;
-  height: 54px;
-  overflow: hidden;
-  color: #fff;
-  font-weight: bold;
-}
-.button__wrap {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 146px;
-  height: 146px;
-  border: 2px solid transparent;
-  border-image: linear-gradient(45deg, #CD21F3 0%, #43B4FB 100%);
-  border-image-slice: 1;
-  transform: translate(-50%, -50%) rotate(45deg);
-  overflow: hidden;
-}
-.button__inner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 180px;
-  min-width: 180px;
-  height: 50px;
-  border: 2px solid transparent;
-  border-image: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%);
-  border-image-slice: 1;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 14px;
-}
-.button:hover {
-  color: #CE20F3;
-}
-
-.box {
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-}
-
 .butn {
   position: relative;
   padding: 5px 15px;
@@ -1737,7 +1689,7 @@ input[type=checkbox]:checked + label:before {
 .butn_gradient {
   background: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%);
 }
-.butn:before, .butn:after {
+.butn_gradient:before, .butn_gradient:after {
   content: "";
   display: block;
   position: absolute;
@@ -1747,11 +1699,11 @@ input[type=checkbox]:checked + label:before {
   transform: translateY(-50%);
   border: 12px solid transparent;
 }
-.butn:before {
+.butn_gradient:before {
   left: -24px;
   border-right: 12px solid #CD21F3;
 }
-.butn:after {
+.butn_gradient:after {
   right: -24px;
   border-left: 12px solid #43B4FB;
 }

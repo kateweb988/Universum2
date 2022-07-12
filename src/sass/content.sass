@@ -988,51 +988,6 @@ input[type=checkbox]:checked+label:before
    color: white
    background: #2324AA
 
-
-.button
-   display: inline-block
-   position: relative
-   width: 184px
-   height: 54px
-   overflow: hidden
-   color: #fff
-   font-weight: bold
-   &__wrap
-      position: absolute
-      left: 50%
-      top: 50%
-      width: 146px
-      height: 146px
-      border: 2px solid transparent
-      border-image: linear-gradient(45deg, #CD21F3 0%, #43B4FB 100%)
-      border-image-slice: 1
-      transform: translate(-50%, -50%) rotate(45deg)
-      overflow: hidden
-   &__inner
-      position: absolute
-      left: 50%
-      top: 50%
-      display: flex
-      justify-content: center
-      align-items: center
-      text-align: center
-      width: 180px
-      min-width: 180px
-      height: 50px
-      border: 2px solid transparent
-      border-image: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%)
-      border-image-slice: 1
-      transform: translate(-50%, -50%) rotate(-45deg)
-      font-size: 14px
-   &:hover
-      color: #CE20F3
-
-
-.box
-   padding: 15px
-   display: flex
-   justify-content: center
-
 .butn
    position: relative
    padding: 5px 15px
@@ -1052,22 +1007,19 @@ input[type=checkbox]:checked+label:before
       box-shadow: 0 0 30px rgba(65, 183, 252, .5)
    &_gradient
       background: linear-gradient(90deg, #CD21F3 0%, #43B4FB 100%)
-   &:before,
-   &:after
-      content: ''
-      display: block
-      position: absolute
-      top: 50%
-      width: 0
-      height: 33px
-      transform: translateY(-50%)
-      border: 12px solid transparent
-   &:before
-      left: -24px
-      border-right: 12px solid #CD21F3
-   &:after
-      right: -24px
-      border-left: 12px solid #43B4FB
-
-
-      // 33px
+      &:before,
+      &:after
+         content: ''
+         display: block
+         position: absolute
+         top: 50%
+         width: 0
+         height: 33px
+         transform: translateY(-50%)
+         border: 12px solid transparent
+      &:before
+         left: -24px
+         border-right: 12px solid #CD21F3
+      &:after
+         right: -24px
+         border-left: 12px solid #43B4FB
