@@ -366,72 +366,72 @@
    background: transparent
    content: ''
    border: 3px solid #CE20F3
-.preloader
-   position: fixed
-   top: 0
-   left: 0
-   width: 100%
-   height: 100%
-   background: white
-   z-index: 100
-#loader
-   display: block
-   position: relative
-   left: 50%
-   top: 50%
-   width: 150px
-   height: 150px
-   margin: -75px 0 0 -75px
-   border-radius: 50%
-   border: 3px solid transparent
-   border-top-color: #9370DB
-   -webkit-animation: spin 2s linear infinite
-   animation: spin 2s linear infinite
-#loader:before
-   content: ""
-   position: absolute
-   top: 5px
-   left: 5px
-   right: 5px
-   bottom: 5px
-   border-radius: 50%
-   border: 3px solid transparent
-   border-top-color: #BA55D3
-   -webkit-animation: spin 3s linear infinite
-   animation: spin 3s linear infinite
-#loader:after
-   content: ""
-   position: absolute
-   top: 15px
-   left: 15px
-   right: 15px
-   bottom: 15px
-   border-radius: 50%
-   border: 3px solid transparent
-   border-top-color: #FF00FF
-   -webkit-animation: spin 1.5s linear infinite
-   animation: spin 1.5s linear infinite
-@-webkit-keyframes spin
-   0%
-      -webkit-transform: rotate(0deg)
-      -ms-transform: rotate(0deg)
-      transform: rotate(0deg)
-   100%
-      -webkit-transform: rotate(360deg)
-      -ms-transform: rotate(360deg)
-      transform: rotate(360deg)
-@keyframes spin
-   0%
-      -webkit-transform: rotate(0deg)
-      -ms-transform: rotate(0deg)
-      transform: rotate(0deg)
-   100%
-      -webkit-transform: rotate(360deg)
-      -ms-transform: rotate(360deg)
-      transform: rotate(360deg)
-.preloader-remove
-   opacity: 0
-   z-index: -10
+// .preloader
+//    position: fixed
+//    top: 0
+//    left: 0
+//    width: 100%
+//    height: 100%
+//    background: white
+//    z-index: 100
+// #loader
+//    display: block
+//    position: relative
+//    left: 50%
+//    top: 50%
+//    width: 150px
+//    height: 150px
+//    margin: -75px 0 0 -75px
+//    border-radius: 50%
+//    border: 3px solid transparent
+//    border-top-color: #9370DB
+//    -webkit-animation: spin 2s linear infinite
+//    animation: spin 2s linear infinite
+// #loader:before
+//    content: ""
+//    position: absolute
+//    top: 5px
+//    left: 5px
+//    right: 5px
+//    bottom: 5px
+//    border-radius: 50%
+//    border: 3px solid transparent
+//    border-top-color: #BA55D3
+//    -webkit-animation: spin 3s linear infinite
+//    animation: spin 3s linear infinite
+// #loader:after
+//    content: ""
+//    position: absolute
+//    top: 15px
+//    left: 15px
+//    right: 15px
+//    bottom: 15px
+//    border-radius: 50%
+//    border: 3px solid transparent
+//    border-top-color: #FF00FF
+//    -webkit-animation: spin 1.5s linear infinite
+//    animation: spin 1.5s linear infinite
+// @-webkit-keyframes spin
+//    0%
+//       -webkit-transform: rotate(0deg)
+//       -ms-transform: rotate(0deg)
+//       transform: rotate(0deg)
+//    100%
+//       -webkit-transform: rotate(360deg)
+//       -ms-transform: rotate(360deg)
+//       transform: rotate(360deg)
+// @keyframes spin
+//    0%
+//       -webkit-transform: rotate(0deg)
+//       -ms-transform: rotate(0deg)
+//       transform: rotate(0deg)
+//    100%
+//       -webkit-transform: rotate(360deg)
+//       -ms-transform: rotate(360deg)
+//       transform: rotate(360deg)
+// .preloader-remove
+//    opacity: 0
+//    z-index: -10
 @keyframes modal-video
    from
       opacity: 0
@@ -545,7 +545,7 @@
       position: relative
       top: -23px
       a:first-child
-         margin-right: 15px
+         margin-right: 40px
    &__sum
       font-weight: 700
       font-size: 32px
@@ -654,6 +654,20 @@
       &__pic
          width: 500px
          object-fit: cover
+   &__btn2 
+      height: 52px !important
+      display: flex
+      align-items: center
+      justify-content: center
+      &:before, &:after 
+         top: -2px !important
+   &__btn 
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 52px !important
+      &:before, &:after 
+         height: 26px !important
 .block__btn2
    width: auto
    padding: 0 22px
@@ -662,7 +676,7 @@
    &-owned 
       margin-top: 120px
       .my-mission__item 
-         width: 17.8%
+         width: 255px !important
          height: 321px
    &__block
       background: #080930
@@ -680,12 +694,25 @@
    &__flex
       align-items: center
    &__btn
-      color: #41B7FC
+      color: #41B7FC !important
       width: max-content
       min-width: 176px
-      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 44px !important
       padding: 0 20px
       font-weight: 400
+      &:before 
+         left: -8px !important
+      &:after
+         right: -8px !important
+      &:after, &:before 
+         top: -2px !important
+         width: 10px !important
+         height: 45px !important
+      &:hover 
+         color: #CE20F3 !important
       .left-bottom
          bottom: 4px
          left: -2px
@@ -1213,22 +1240,14 @@ input[type=checkbox]:checked+label:before
          width: 100%
          height: 40px
          margin-left: 0 !important
-         .left-up
-            transform: rotate(144deg)
-            top: 4px
-            left: -1px
-         .right-up 
-            transform: rotate(39deg)
-            top: 4px
-            right: -1px
-         .left-bottom 
-            transform: rotate(33deg)
-            bottom: 4px
-            left: -1px
-         .right-bottom 
-            transform: rotate(-41deg)
-            bottom: 4px
-            right: -1px
+         &:after 
+            right: -7px !important
+         &:before
+            left: -7px !important
+         &:before, &:after 
+            top: -2px !important
+            width: 9px !important
+            height: 41px !important
       &__item:last-child
          .popup__check label
             margin-bottom: 0
@@ -1253,7 +1272,7 @@ input[type=checkbox]:checked+label:before
          max-width: 956px
       &__title
          font-size: 48px
-         line-height: 48px
+         line-height: 1.3
          margin-bottom: 20px
       &__text 
          font-size: 18px
@@ -1272,6 +1291,8 @@ input[type=checkbox]:checked+label:before
 .vote__info
    display: flex
    align-items: center
+   &_btn 
+      display: flex
    .svg
       margin-left: 10px
       &:hover 
@@ -1357,12 +1378,18 @@ input[type=checkbox]:checked+label:before
             padding-left: 34px
    &__back 
       align-items: center
+      width: max-content
       margin-bottom: 37px
+      .icon 
+         width: 10px
+         height: 16px
+         fill: #fff
+         transition: 0.5s
       &:hover 
          p 
             color: #41B7FC
             border-bottom: 1px solid #41B7FC
-         path
+         .icon
             fill: #41B7FC
       p 
          font-weight: 400
@@ -1407,6 +1434,15 @@ input[type=checkbox]:checked+label:before
       align-items: center
    &__socials
       align-items: center
+      position: relative
+      top: 2px
+      .icon 
+         width: 17px
+         height: 13px
+         fill: white
+         transition: 0.5s
+         &:hover 
+            fill: #41B7FC
    &__link 
       margin-left: 10px
       transition: 0.5s
@@ -1434,16 +1470,20 @@ input[type=checkbox]:checked+label:before
    height: 40px
    font-weight: 500
    font-size: 14px
-   &:before
-      background: #fff
-      -webkit-mask: #fff
-   div 
-      background: #fff
-      width: 12px
-   .left-up 
-      transform: rotate(138deg)
-      top: 4px
-      left: 0px
+   border-color: #fff
+   border-image: inherit
+   &:before, &:after 
+      top: -3px
+      width: 11px
+      height: 47px
+   &:before 
+      background: url(./img/btn_left-white.svg) top right no-repeat
+      background-size: 85%
+      left: -9px
+   &:after
+      background: url(./img/btn_right-white.svg) top right no-repeat
+      background-size: 85%
+      right: -7px
 .popup__check label
    text-align: left
    font-weight: 400
@@ -1479,11 +1519,15 @@ input#agree
       font-family: 'Druk Wide'
    &__btn 
       height: 50px
+      transition: 0.5s
+      color: #fff
       width: 100%
       border: none
       font-weight: 800
       font-size: 16px
       clip-path: polygon(0% 23%, 2% 0%, 98% 0%, 100% 22%, 100% 88%, 97% 100%, 3% 100%, 0 80%)
+      &:hover 
+            color: #41B7FC 
    &__check
       margin-bottom: 15px
       cursor: pointer
@@ -1501,7 +1545,9 @@ input#agree
          cursor: pointer
          transition: 0.5s
       &:hover
+         transition: 0.5s
          label
+            transition: 0.5s
             color: #41B7FC
 input[type=radio]
    display: none
@@ -1523,10 +1569,13 @@ input[type=radio]+label:before
    position: absolute
    left: 20px
    top: 18px
+   transition: 0.5s
 input[type=radio]:checked+label:before
    color: white
+   transition: 0.5s
 input[type=radio]+label
    position: relative
+   transition: 0.5s
    background: linear-gradient(29.65deg, #06055A 49.18%, #0A185F 103.14%)
 input[type=radio]:checked+label:after
    content: ""
@@ -1539,6 +1588,7 @@ input[type=radio]:checked+label:after
    margin: -3px
    border-radius: inherit
    background-image: linear-gradient(45deg, #CD21F3, #42B5FC)
+   transition: 0.5s
 .header-inner
    padding-bottom: 0px
 .my-mission___pic
@@ -1558,10 +1608,34 @@ input[type=radio]:checked+label:after
       background: linear-gradient(33.65deg, #06055A 30.87%, #0A185F 84.28%)
       &__next 
          width: 163px
-         height: 39px
+         height: 43px
          font-size: 14px
          margin-left: auto
          margin-top: 40px
+         &:before, &:after 
+            height: 20px 
+      &__btn 
+         align-items: center
+         display: block
+         position: absolute
+         bottom: 0
+         left: 50%
+         width: 200px
+         margin-left: -100px
+         height: 42px
+         justify-content: center
+         display: flex
+         line-height: 16px
+         padding-left: 2px
+         transition: 0.5s
+         padding-bottom: 8px
+         border-top: 1px solid transparent
+         &:after 
+            content: ""
+            font-weight: 800
+            font-size: 13px
+            color: #fff
+            transition: 0.5s
       &__name 
          font-weight: 700
          font-size: 20px
@@ -1587,7 +1661,7 @@ input[type=radio]:checked+label:after
          flex-wrap: wrap
          margin-top: 57px
       &__item 
-         width: 18.8%
+         width: 255px 
          height: 321.91px
          margin-right: 20px
          background: #41B7FC
@@ -1604,78 +1678,62 @@ input[type=radio]:checked+label:after
             justify-content: center
             .my-mission___pic
                display: none
-         &.claim::after
-            align-items: center
-            content: "Claim"
-            display: block
-            position: absolute
-            bottom: 0
-            left: 50%
-            width: 200px
-            margin-left: -100px
+         // &.claim::after
+         //    align-items: center
+         //    content: "Claim"
+         //    display: block
+         //    position: absolute
+         //    bottom: 0
+         //    left: 50%
+         //    width: 200px
+         //    margin-left: -100px
+         //    background: #1D844D
+         //    height: 42px
+         //    justify-content: center
+         //    display: flex
+         //    font-weight: 800
+         //    font-size: 13px
+         //    line-height: 16px
+         //    padding-left: 2px
+         //    padding-bottom: 8px
+         &.blue .my-mission__btn
+            display: none
+         &.claim .my-mission__btn
             background: #1D844D
-            height: 42px
-            justify-content: center
-            display: flex
-            font-weight: 800
-            font-size: 13px
-            line-height: 16px
-            padding-left: 2px
-            padding-bottom: 8px
-         &.mint::after
-            align-items: center
-            content: "mint"
-            display: block
-            position: absolute
-            bottom: 0
-            left: 50%
-            width: 200px
-            margin-left: -100px
+            &:hover 
+               background: transparent
+               border-top: 1px solid #1D844D
+               &:after 
+                  color: #1D844D
+            &:after 
+               content: "Claim"
+         &.mint .my-mission__btn
             background: #F29420
-            height: 42px
-            justify-content: center
-            display: flex
-            font-weight: 800
-            font-size: 13px
-            line-height: 16px
-            padding-left: 2px
-            padding-bottom: 8px
-         &.stake::after
-            align-items: center
-            content: "Stake"
-            display: block
-            position: absolute
-            bottom: 0
-            left: 50%
-            width: 200px
-            margin-left: -100px
+            &:hover 
+               background: transparent
+               border-top: 1px solid #F29420
+               &:after 
+                  color: #F29420
+            &:after 
+               content: "mint"
+         &.stake .my-mission__btn
             background: #9C17C2
-            height: 42px
-            justify-content: center
-            display: flex
-            font-weight: 800
-            font-size: 13px
-            line-height: 16px
-            padding-left: 2px
-            padding-bottom: 8px
-         &.unstake::after
-            align-items: center
-            content: "Unstake"
-            display: block
-            position: absolute
-            bottom: 0
-            left: 50%
-            width: 200px
-            margin-left: -100px
+            &:hover 
+               background: transparent
+               border-top: 1px solid #9C17C2
+               &:after 
+                  color: #9C17C2
+            &:after 
+               content: "Stake"
+         &.unstake .my-mission__btn
             background: #F2202E
-            height: 42px
-            justify-content: center
-            display: flex
-            font-weight: 800
-            font-size: 13px
-            line-height: 16px
-            padding-left: 2px
-            padding-bottom: 8px
+            &:hover 
+               background: transparent
+               border-top: 1px solid #F2202E
+               &:after 
+                  color: #F2202E
+            &:after 
+               content: "Unstake"
          &.checked::before
             content: ""
             display: block
@@ -1714,9 +1772,13 @@ input[type=radio]:checked+label:after
       margin-top: 20px
       width: 100%
       background: linear-gradient(278.15deg, #06055A -0.59%, #0A185F 57.82%)
-      clip-path: polygon(0% 3%, 2% 0%, 98% 0%, 100% 4%, 100% 96%, 98% 100%, 2% 100%, 0px 95%)
+      clip-path: polygon(0% 1%, 2% 0%, 98% 0%, 100% 1%, 100% 99%, 98% 100%, 2% 100%, 0px 99%)
       &__link 
          margin: 30px auto 0
+         width: max-content
+         height: 44px
+         &:before, &:after 
+            height: 21px
       &__span 
          margin-left: 5px
       &__top
@@ -1726,12 +1788,14 @@ input[type=radio]:checked+label:after
       &__btn 
          width: 186px
          height: 40px
-         .left-up 
-            left: -2px
-         .left-bottom 
-            transform: rotate(41deg)
-            bottom: 4px
-            left: -1px
+         &:before, &:after 
+            top: -3px !important
+            width: 12px !important
+            height: 53px !important
+         &:before
+            background-size: 77% !important
+         &:after
+            background-size: 77% !important
       &__left 
          display: flex
          align-items: center
@@ -1884,10 +1948,10 @@ input[type=radio]:checked+label:after
       justify-content: space-between
       margin-bottom: 20px
       &__btn 
-         width: 163px
+         width: 148px
          height: 55px
          margin-left: 10px
-         margin-top: 10px
+         margin-top: 20px
       &__num 
          display: flex
          align-items: center
@@ -1928,6 +1992,10 @@ input[type=radio]:checked+label:after
          line-height: 120%
       &__item
          position: relative
+         display: flex
+         align-items: center
+         justify-content: center
+         flex-direction: column
          flex: 1 0 auto 
          padding: 34px
          text-align: center
@@ -1935,7 +2003,7 @@ input[type=radio]:checked+label:after
          clip-path: polygon(0% 15%, 9% 0%, 92% 0%, 100% 12%, 100% 89%, 91% 100%, 8% 100%, 0px 87%)
          width: 231.52px
          max-width: 232px
-         height: 130px
+         height: auto
          background: linear-gradient(74.01deg, #06055A -1.04%, #0A185F 102.85%)
          &:nth-child(1)
             border-top: 6px solid #41B7FC
@@ -2008,6 +2076,9 @@ input[type=radio]:checked+label:after
    background: #5856D6
    box-shadow: 0px 0.1px 0.3px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 20%)
    transition: 0.5s
+.checkboxes-and-radios__my:hover 
+   input[type="checkbox"]+label:after
+      background: rgb(156, 23, 194) !important
 .checkboxes-and-radios input[type="checkbox"]:checked+label:after, .checkboxes-and-radios input[type="radio"]:checked+label:after
    left: -35px
    background: #5856D6

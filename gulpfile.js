@@ -38,7 +38,7 @@ function stylesBuild() {
 }
 
 function sctiptsBuild() {
-	return gulp.src(['src/js/jquery-3.4.1.min.js', 'src/js/main.js'])
+	return gulp.src(['src/js/main.js'])
 		.pipe(babel({
 			presets: ['env']
 		}))
@@ -67,7 +67,7 @@ function styles() {
 }
 
 function sctipts() {
-	return gulp.src(['src/js/jquery-3.4.1.min.js', 'src/js/jquery.arcticmodal-0.3.min.js', 'src/js/slick.min.js', 'src/js/main.js'])
+	return gulp.src(['src/js/slick.min.js', 'src/js/main.js'])
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('dev/js/'))
 		.pipe(browserSync.stream());

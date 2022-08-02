@@ -232,61 +232,6 @@ a:hover {
   position: relative;
 }
 
-.left-up {
-  background: #CD21F3;
-  transform: rotate(131deg);
-  top: 5px;
-  left: -1px;
-}
-
-.left-bottom {
-  background: #CD21F3;
-  transform: rotate(45deg);
-  bottom: 5px;
-  left: -1px;
-}
-
-.right-up {
-  background: #43B4FB;
-  transform: rotate(50deg);
-  top: 5px;
-  right: -2px;
-}
-
-.right-bottom {
-  background: #43B4FB;
-  transform: rotate(-51deg);
-  bottom: 5px;
-  right: -2px;
-}
-
-.btn1 div {
-  position: absolute;
-  width: 14px;
-  height: 2px;
-}
-.btn1::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 2px;
-  clip-path: polygon(0% 23%, 6% 0%, 95% 0%, 100% 23%, 100% 77%, 95% 100%, 6% 100%, 0 80%);
-  background: linear-gradient(to right, #CD21F3, #43B4FB);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, dlinear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-.btn2 {
-  background: linear-gradient(90.34deg, #CE20F3 0.24%, #41B7FC 99.71%);
-  clip-path: polygon(0% 23%, 5% 0%, 95% 0%, 100% 19%, 100% 88%, 94% 100%, 6% 100%, 0 80%);
-}
-.btn2:hover {
-  color: #41B7FC;
-}
-
 .d-flex {
   display: flex;
 }
@@ -375,6 +320,12 @@ path {
 
 div {
   box-sizing: border-box;
+}
+
+.butn_borderred, .butn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
 }
 
 @font-face {
@@ -882,88 +833,6 @@ div {
   border: 3px solid #CE20F3;
 }
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  z-index: 100;
-}
-
-#loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #9370DB;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-#loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #BA55D3;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-}
-
-#loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #FF00FF;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.preloader-remove {
-  opacity: 0;
-  z-index: -10;
-}
-
 @keyframes modal-video {
   from {
     opacity: 0;
@@ -1110,7 +979,7 @@ div {
   top: -23px;
 }
 .block__links a:first-child {
-  margin-right: 15px;
+  margin-right: 40px;
 }
 .block__sum {
   font-weight: 700;
@@ -1236,6 +1105,24 @@ div {
   width: 500px;
   object-fit: cover;
 }
+.block__btn2 {
+  height: 52px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block__btn2:before, .block__btn2:after {
+  top: -2px !important;
+}
+.block__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px !important;
+}
+.block__btn:before, .block__btn:after {
+  height: 26px !important;
+}
 
 .block__btn2 {
   width: auto;
@@ -1249,7 +1136,7 @@ div {
   margin-top: 120px;
 }
 .info-owned .my-mission__item {
-  width: 17.8%;
+  width: 255px !important;
   height: 321px;
 }
 .info__block {
@@ -1271,12 +1158,29 @@ div {
   align-items: center;
 }
 .info__btn {
-  color: #41B7FC;
+  color: #41B7FC !important;
   width: max-content;
   min-width: 176px;
-  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px !important;
   padding: 0 20px;
   font-weight: 400;
+}
+.info__btn:before {
+  left: -8px !important;
+}
+.info__btn:after {
+  right: -8px !important;
+}
+.info__btn:after, .info__btn:before {
+  top: -2px !important;
+  width: 10px !important;
+  height: 45px !important;
+}
+.info__btn:hover {
+  color: #CE20F3 !important;
 }
 .info__btn .left-bottom {
   bottom: 4px;
@@ -1936,25 +1840,16 @@ input[type=checkbox]:checked + label:before {
   height: 40px;
   margin-left: 0 !important;
 }
-.dao-left__btn .left-up {
-  transform: rotate(144deg);
-  top: 4px;
-  left: -1px;
+.dao-left__btn:after {
+  right: -7px !important;
 }
-.dao-left__btn .right-up {
-  transform: rotate(39deg);
-  top: 4px;
-  right: -1px;
+.dao-left__btn:before {
+  left: -7px !important;
 }
-.dao-left__btn .left-bottom {
-  transform: rotate(33deg);
-  bottom: 4px;
-  left: -1px;
-}
-.dao-left__btn .right-bottom {
-  transform: rotate(-41deg);
-  bottom: 4px;
-  right: -1px;
+.dao-left__btn:before, .dao-left__btn:after {
+  top: -2px !important;
+  width: 9px !important;
+  height: 41px !important;
 }
 .dao-left__item:last-child .popup__check label {
   margin-bottom: 0;
@@ -1986,7 +1881,7 @@ input[type=checkbox]:checked + label:before {
 }
 .dao-top__title {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 1.3;
   margin-bottom: 20px;
 }
 .dao-top__text {
@@ -2013,6 +1908,9 @@ input[type=checkbox]:checked + label:before {
 .vote__info {
   display: flex;
   align-items: center;
+}
+.vote__info_btn {
+  display: flex;
 }
 .vote__info .svg {
   margin-left: 10px;
@@ -2123,13 +2021,20 @@ input[type=checkbox]:checked + label:before {
 }
 .inner__back {
   align-items: center;
+  width: max-content;
   margin-bottom: 37px;
+}
+.inner__back .icon {
+  width: 10px;
+  height: 16px;
+  fill: #fff;
+  transition: 0.5s;
 }
 .inner__back:hover p {
   color: #41B7FC;
   border-bottom: 1px solid #41B7FC;
 }
-.inner__back:hover path {
+.inner__back:hover .icon {
   fill: #41B7FC;
 }
 .inner__back p {
@@ -2184,6 +2089,17 @@ input[type=checkbox]:checked + label:before {
 }
 .inner__socials {
   align-items: center;
+  position: relative;
+  top: 2px;
+}
+.inner__socials .icon {
+  width: 17px;
+  height: 13px;
+  fill: white;
+  transition: 0.5s;
+}
+.inner__socials .icon:hover {
+  fill: #41B7FC;
 }
 .inner__link {
   margin-left: 10px;
@@ -2218,19 +2134,23 @@ input[type=checkbox]:checked + label:before {
   height: 40px;
   font-weight: 500;
   font-size: 14px;
+  border-color: #fff;
+  border-image: inherit;
+}
+.big-white-btn:before, .big-white-btn:after {
+  top: -3px;
+  width: 11px;
+  height: 47px;
 }
 .big-white-btn:before {
-  background: #fff;
-  -webkit-mask: #fff;
+  background: url(./img/btn_left-white.svg) top right no-repeat;
+  background-size: 85%;
+  left: -9px;
 }
-.big-white-btn div {
-  background: #fff;
-  width: 12px;
-}
-.big-white-btn .left-up {
-  transform: rotate(138deg);
-  top: 4px;
-  left: 0px;
+.big-white-btn:after {
+  background: url(./img/btn_right-white.svg) top right no-repeat;
+  background-size: 85%;
+  right: -7px;
 }
 
 .popup__check label {
@@ -2274,11 +2194,16 @@ input#agree {
 }
 .inner-block__btn {
   height: 50px;
+  transition: 0.5s;
+  color: #fff;
   width: 100%;
   border: none;
   font-weight: 800;
   font-size: 16px;
   clip-path: polygon(0% 23%, 2% 0%, 98% 0%, 100% 22%, 100% 88%, 97% 100%, 3% 100%, 0 80%);
+}
+.inner-block__btn:hover {
+  color: #41B7FC;
 }
 .inner-block__check {
   margin-bottom: 15px;
@@ -2298,7 +2223,11 @@ input#agree {
   cursor: pointer;
   transition: 0.5s;
 }
+.inner-block__check:hover {
+  transition: 0.5s;
+}
 .inner-block__check:hover label {
+  transition: 0.5s;
   color: #41B7FC;
 }
 
@@ -2324,14 +2253,17 @@ input[type=radio] + label:before {
   position: absolute;
   left: 20px;
   top: 18px;
+  transition: 0.5s;
 }
 
 input[type=radio]:checked + label:before {
   color: white;
+  transition: 0.5s;
 }
 
 input[type=radio] + label {
   position: relative;
+  transition: 0.5s;
   background: linear-gradient(29.65deg, #06055A 49.18%, #0A185F 103.14%);
 }
 
@@ -2346,6 +2278,7 @@ input[type=radio]:checked + label:after {
   margin: -3px;
   border-radius: inherit;
   background-image: linear-gradient(45deg, #CD21F3, #42B5FC);
+  transition: 0.5s;
 }
 
 .header-inner {
@@ -2373,10 +2306,37 @@ input[type=radio]:checked + label:after {
 }
 .my-mission__next {
   width: 163px;
-  height: 39px;
+  height: 43px;
   font-size: 14px;
   margin-left: auto;
   margin-top: 40px;
+}
+.my-mission__next:before, .my-mission__next:after {
+  height: 20px;
+}
+.my-mission__btn {
+  align-items: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  height: 42px;
+  justify-content: center;
+  display: flex;
+  line-height: 16px;
+  padding-left: 2px;
+  transition: 0.5s;
+  padding-bottom: 8px;
+  border-top: 1px solid transparent;
+}
+.my-mission__btn:after {
+  content: "";
+  font-weight: 800;
+  font-size: 13px;
+  color: #fff;
+  transition: 0.5s;
 }
 .my-mission__name {
   font-weight: 700;
@@ -2407,7 +2367,7 @@ input[type=radio]:checked + label:after {
   margin-top: 57px;
 }
 .my-mission__item {
-  width: 18.8%;
+  width: 255px;
   height: 321.91px;
   margin-right: 20px;
   background: #41B7FC;
@@ -2428,81 +2388,60 @@ input[type=radio]:checked + label:after {
 .my-mission__item.none .my-mission___pic {
   display: none;
 }
-.my-mission__item.claim::after {
-  align-items: center;
-  content: "Claim";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
+.my-mission__item.blue .my-mission__btn {
+  display: none;
+}
+.my-mission__item.claim .my-mission__btn {
   background: #1D844D;
-  height: 42px;
-  justify-content: center;
-  display: flex;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 16px;
-  padding-left: 2px;
-  padding-bottom: 8px;
 }
-.my-mission__item.mint::after {
-  align-items: center;
-  content: "mint";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
+.my-mission__item.claim .my-mission__btn:hover {
+  background: transparent;
+  border-top: 1px solid #1D844D;
+}
+.my-mission__item.claim .my-mission__btn:hover:after {
+  color: #1D844D;
+}
+.my-mission__item.claim .my-mission__btn:after {
+  content: "Claim";
+}
+.my-mission__item.mint .my-mission__btn {
   background: #F29420;
-  height: 42px;
-  justify-content: center;
-  display: flex;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 16px;
-  padding-left: 2px;
-  padding-bottom: 8px;
 }
-.my-mission__item.stake::after {
-  align-items: center;
-  content: "Stake";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
+.my-mission__item.mint .my-mission__btn:hover {
+  background: transparent;
+  border-top: 1px solid #F29420;
+}
+.my-mission__item.mint .my-mission__btn:hover:after {
+  color: #F29420;
+}
+.my-mission__item.mint .my-mission__btn:after {
+  content: "mint";
+}
+.my-mission__item.stake .my-mission__btn {
   background: #9C17C2;
-  height: 42px;
-  justify-content: center;
-  display: flex;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 16px;
-  padding-left: 2px;
-  padding-bottom: 8px;
 }
-.my-mission__item.unstake::after {
-  align-items: center;
-  content: "Unstake";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
+.my-mission__item.stake .my-mission__btn:hover {
+  background: transparent;
+  border-top: 1px solid #9C17C2;
+}
+.my-mission__item.stake .my-mission__btn:hover:after {
+  color: #9C17C2;
+}
+.my-mission__item.stake .my-mission__btn:after {
+  content: "Stake";
+}
+.my-mission__item.unstake .my-mission__btn {
   background: #F2202E;
-  height: 42px;
-  justify-content: center;
-  display: flex;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 16px;
-  padding-left: 2px;
-  padding-bottom: 8px;
+}
+.my-mission__item.unstake .my-mission__btn:hover {
+  background: transparent;
+  border-top: 1px solid #F2202E;
+}
+.my-mission__item.unstake .my-mission__btn:hover:after {
+  color: #F2202E;
+}
+.my-mission__item.unstake .my-mission__btn:after {
+  content: "Unstake";
 }
 .my-mission__item.checked::before {
   content: "";
@@ -2547,10 +2486,15 @@ input[type=radio]:checked + label:after {
   margin-top: 20px;
   width: 100%;
   background: linear-gradient(278.15deg, #06055A -0.59%, #0A185F 57.82%);
-  clip-path: polygon(0% 3%, 2% 0%, 98% 0%, 100% 4%, 100% 96%, 98% 100%, 2% 100%, 0px 95%);
+  clip-path: polygon(0% 1%, 2% 0%, 98% 0%, 100% 1%, 100% 99%, 98% 100%, 2% 100%, 0px 99%);
 }
 .my-block__link {
   margin: 30px auto 0;
+  width: max-content;
+  height: 44px;
+}
+.my-block__link:before, .my-block__link:after {
+  height: 21px;
 }
 .my-block__span {
   margin-left: 5px;
@@ -2564,13 +2508,16 @@ input[type=radio]:checked + label:after {
   width: 186px;
   height: 40px;
 }
-.my-block__btn .left-up {
-  left: -2px;
+.my-block__btn:before, .my-block__btn:after {
+  top: -3px !important;
+  width: 12px !important;
+  height: 53px !important;
 }
-.my-block__btn .left-bottom {
-  transform: rotate(41deg);
-  bottom: 4px;
-  left: -1px;
+.my-block__btn:before {
+  background-size: 77% !important;
+}
+.my-block__btn:after {
+  background-size: 77% !important;
 }
 .my-block__left {
   display: flex;
@@ -2753,10 +2700,10 @@ input[type=radio]:checked + label:after {
   margin-bottom: 20px;
 }
 .my-top__btn {
-  width: 163px;
+  width: 148px;
   height: 55px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .my-top__num {
   display: flex;
@@ -2804,6 +2751,10 @@ input[type=radio]:checked + label:after {
 }
 .my-top__item {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   flex: 1 0 auto;
   padding: 34px;
   text-align: center;
@@ -2811,7 +2762,7 @@ input[type=radio]:checked + label:after {
   clip-path: polygon(0% 15%, 9% 0%, 92% 0%, 100% 12%, 100% 89%, 91% 100%, 8% 100%, 0px 87%);
   width: 231.52px;
   max-width: 232px;
-  height: 130px;
+  height: auto;
   background: linear-gradient(74.01deg, #06055A -1.04%, #0A185F 102.85%);
 }
 .my-top__item:nth-child(1) {
@@ -2905,6 +2856,10 @@ input[type=radio]:checked + label:after {
   transition: 0.5s;
 }
 
+.checkboxes-and-radios__my:hover input[type=checkbox] + label:after {
+  background: rgb(156, 23, 194) !important;
+}
+
 .checkboxes-and-radios input[type=checkbox]:checked + label:after, .checkboxes-and-radios input[type=radio]:checked + label:after {
   left: -35px;
   background: #5856D6;
@@ -2991,6 +2946,11 @@ nav {
 
 .nav__btn {
   margin-left: 28px;
+  align-items: center;
+  margin-left: 28px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav__right {
@@ -2999,15 +2959,31 @@ nav {
   top: 5px;
 }
 
-.nav__link {
-  display: block;
+nav .nav__link, footer .nav__link {
+  display: flex;
   margin-left: 10px;
+  width: 50px;
+  height: 54px;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  clip-path: polygon(0% 24%, 50% 0%, 100% 22%, 100% 78%, 50% 100%, 100% 100%, 50% 100%, 0 78%);
 }
-.nav__link p {
+nav .nav__link:nth-child(3) .icon, footer .nav__link:nth-child(3) .icon {
+  width: 40px;
+}
+nav .nav__link .icon, footer .nav__link .icon {
+  width: 25px;
+  height: 100%;
   transition: 0.5s;
 }
-.nav__link:hover #one {
-  fill: #CE20F3;
+nav .nav__link .icon path, footer .nav__link .icon path {
+  transition: 0.5s;
+}
+nav .nav__link:hover, footer .nav__link:hover {
+  transition: 0.5s;
+  background: #CE20F3;
 }
 
 .header {
@@ -3054,6 +3030,9 @@ nav {
 }
 .header__box .nav__socials {
   margin-top: 17px;
+}
+.header__box .nav__socials p {
+  transition: 0.5s;
 }
 .header__box .nav__socials a {
   display: flex;
@@ -3157,7 +3136,8 @@ nav {
     left: 64%;
   }
   .my-mission__item {
-    margin-right: 18px;
+    margin-right: 16px;
+    width: 246px;
   }
   .my-top__item {
     max-width: 228px;
@@ -3216,6 +3196,12 @@ nav {
   }
   .my-slider .slick-next {
     left: 52.5%;
+  }
+  .my-mission__item:nth-child(5n) {
+    margin-right: 16px;
+  }
+  .my-mission__item:nth-child(4n) {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 1299px) {
@@ -3609,7 +3595,7 @@ nav {
     left: inherit;
   }
   .my-mission__item {
-    width: 22%;
+    width: 246px !important;
     margin: 10px !important;
     padding: 40px 15px;
   }
@@ -3621,6 +3607,18 @@ nav {
   }
   .info-owned .my-mission__item {
     width: 27.8%;
+  }
+  .content-table__row td:nth-child(1) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-table__row td:nth-child(1):before {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .info__btn {
+    margin-right: 7px;
   }
 }
 @media (max-width: 991px) {
@@ -3693,19 +3691,18 @@ nav {
   }
   .dao-left__list {
     display: flex;
-    white-space: nowrap;
-    overflow-x: auto;
     padding-bottom: 15px;
     padding-top: 10px;
+    flex-wrap: wrap;
   }
   .dao-left__btn {
     max-width: 227px;
     margin: 0 auto !important;
   }
   .dao-left .popup__check label {
-    width: auto;
-    margin-right: 40px;
-    margin-bottom: 0;
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 5px;
   }
   .dao-left__item:last-child .popup__check label {
     margin-right: 0;
@@ -3740,7 +3737,7 @@ nav {
   }
   .my-top__item {
     margin: 10px !important;
-    max-width: 260px;
+    max-width: 50%;
   }
   .my-wrap {
     justify-content: center;
@@ -3882,7 +3879,7 @@ nav {
     width: 100%;
   }
   .checkboxes-and-radios__my {
-    margin: 25px 0 25px -261px;
+    margin: 25px 0 25px -237px;
   }
   .my-mission__item {
     width: 45%;
@@ -4098,12 +4095,14 @@ nav {
     flex-direction: column;
   }
   .block__links a:first-child {
-    width: 180px;
+    width: 100%;
     margin: 0 auto 20px;
     font-size: 12px;
+    max-width: 300px;
   }
   .block__btn2 {
-    max-width: 180px;
+    max-width: 300px;
+    width: 100%;
     font-size: 12px;
     margin: 0 auto;
   }
@@ -4181,37 +4180,14 @@ nav {
   }
   .checkboxes-and-radios__my label {
     font-size: 10px;
+    width: 37%;
   }
   .my-block {
     padding: 32px 10px 45px;
   }
   .my-label {
-    white-space: nowrap;
     position: relative !important;
-  }
-  .checkboxes-and-radios__my {
-    justify-content: center;
-    flex-direction: column-reverse;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 25px 0 25px 0px;
-  }
-  .checkboxes-and-radios input[type=checkbox] + label {
-    left: 0;
-    margin-top: 37px;
-  }
-  .checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before {
-    left: 50%;
-    margin-left: -21px;
-    top: -11px;
-  }
-  .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after {
-    left: 48px;
-    top: -14px;
-  }
-  .checkboxes-and-radios input[type=checkbox]:checked + label:after, .checkboxes-and-radios input[type=radio]:checked + label:after {
-    left: 64px;
+    width: 31%;
   }
   .my-block__link {
     margin: 89px auto 0;
@@ -4232,6 +4208,38 @@ nav {
   }
   .info-owned .my-mission__item {
     width: 100%;
+  }
+  .checkboxes-and-radios__my {
+    margin: 25px 0 25px -141px;
+  }
+  .checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before {
+    left: -56px;
+  }
+  .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after {
+    left: -57px;
+    top: 24px;
+  }
+  .dao-left .popup__check label {
+    width: 122px;
+    display: flex;
+    align-items: center;
+  }
+  .dao-top__logo {
+    position: relative;
+    top: -37px;
+  }
+  .my-top__item {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 10px !important;
+  }
+}
+@media screen and (max-width: 576px) and (max-width: 374px) {
+  .dao-left .popup__check label {
+    width: 100%;
+  }
+  .dao-left__list {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 390px) {

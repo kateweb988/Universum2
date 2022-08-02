@@ -58,7 +58,8 @@
    .my-slider .slick-next
       left: 64%
    .my-mission__item
-      margin-right: 18px
+      margin-right: 16px
+      width: 246px
    .my-top__item
       max-width: 228px
 @media screen and (max-width: 1399px)
@@ -100,6 +101,10 @@
       width: 2250px
    .my-slider .slick-next 
       left: 52.5%
+   .my-mission__item:nth-child(5n)
+      margin-right: 16px
+   .my-mission__item:nth-child(4n)
+      margin-right: 0
 @media screen and (max-width: 1299px)
    .header__content
       max-width: 600px
@@ -397,7 +402,7 @@
       right: 0
       left: inherit
    .my-mission__item 
-      width: 22%
+      width: 246px !important
       margin: 10px !important
       padding: 40px 15px
    .my-mission__text
@@ -406,6 +411,15 @@
       justify-content: center
    .info-owned .my-mission__item 
       width: 27.8%
+   .content-table__row td:nth-child(1) 
+      align-items: center
+      justify-content: center
+      flex-direction: column
+   .content-table__row td:nth-child(1):before 
+      margin-right: 0
+      margin-bottom: 5px
+   .info__btn
+      margin-right: 7px
 @media ( max-width: 991px )
    .items__info
       top: 31px
@@ -466,17 +480,18 @@
       clip-path: polygon(0% 3%, 4% 0%, 96% 0%, 100% 3%, 100% 97%, 96% 100%, 4% 100%, 0px 96%)
    .dao-left__list
       display: flex
-      white-space: nowrap
-      overflow-x: auto
+      // white-space: nowrap
+      // overflow-x: auto
       padding-bottom: 15px
       padding-top: 10px
+      flex-wrap: wrap
    .dao-left__btn
       max-width: 227px
       margin: 0 auto !important
    .dao-left .popup__check label
-      width: auto
-      margin-right: 40px
-      margin-bottom: 0
+      width: 140px
+      margin-right: 10px
+      margin-bottom: 5px
    .dao-left__item:last-child .popup__check label
       margin-right: 0
    .dao 
@@ -500,7 +515,7 @@
       justify-content: center
    .my-top__item
       margin: 10px !important
-      max-width: 260px
+      max-width: 50%
    .my-wrap
       justify-content: center
       clip-path: polygon(0% 6%, 2% 0%, 98% 0%, 100% 6%, 100% 94%, 98% 100%, 2% 100%, 0px 94%)
@@ -601,7 +616,7 @@
    .my-top__btn
       width: 100%
    .checkboxes-and-radios__my 
-      margin: 25px 0 25px -261px
+      margin: 25px 0 25px -237px
    .my-mission__item 
       width: 45%
    .items__el
@@ -758,11 +773,13 @@
    .block__links
       flex-direction: column
    .block__links a:first-child
-      width: 180px
+      width: 100%
       margin: 0 auto 20px
       font-size: 12px
+      max-width: 300px
    .block__btn2
-      max-width: 180px
+      max-width: 300px
+      width: 100%
       font-size: 12px
       margin: 0 auto
    .info__title
@@ -819,30 +836,32 @@
       padding: 28px 10px
    .checkboxes-and-radios__my label
       font-size: 10px
+      width: 37%
    .my-block
       padding: 32px 10px 45px
    .my-label 
-      white-space: nowrap
+      // white-space: nowrap
       position: relative !important
-   .checkboxes-and-radios__my
-      justify-content: center
-      flex-direction: column-reverse
-      display: flex
-      align-items: center
-      width: 100%
-      margin: 25px 0 25px 0px
-   .checkboxes-and-radios input[type=checkbox] + label
-      left: 0
-      margin-top: 37px
-   .checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before
-      left: 50%
-      margin-left: -21px
-      top: -11px
-   .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after
-      left: 48px
-      top: -14px
-   .checkboxes-and-radios input[type=checkbox]:checked + label:after, .checkboxes-and-radios input[type=radio]:checked + label:after
-      left: 64px
+      width: 31%
+   // .checkboxes-and-radios__my
+   //    justify-content: center
+   //    flex-direction: column-reverse
+   //    display: flex
+   //    align-items: center
+   //    width: 100%
+   //    margin: 25px 0 25px 0px
+   // .checkboxes-and-radios input[type=checkbox] + label
+   //    left: 0
+   //    margin-top: 37px
+   // .checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before
+   //    left: 50%
+   //    margin-left: -21px
+   //    top: -11px
+   // .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after
+   //    left: 48px
+   //    top: -14px
+   // .checkboxes-and-radios input[type=checkbox]:checked + label:after, .checkboxes-and-radios input[type=radio]:checked + label:after
+   //    left: 64px
    .my-block__link 
       margin: 89px auto 0
    .my-mission__title 
@@ -857,6 +876,29 @@
       clip-path: polygon(0% 1%, 5% 0%, 96% 0%, 100% 1%, 100% 99.5%, 93% 100%, 6% 100%, 0px 99.4%)
    .info-owned .my-mission__item
       width: 100%
+   .checkboxes-and-radios__my 
+      margin: 25px 0 25px -141px
+   .checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before
+      left: -56px
+   .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after 
+      left: -57px
+      top: 24px
+   .dao-left .popup__check label 
+      width: 122px
+      display: flex
+      align-items: center
+   .dao-top__logo
+      position: relative
+      top: -37px
+   .my-top__item
+      max-width: 100%
+      width: 100%
+      margin: 0 auto 10px !important
+   @media screen and (max-width: 374px)
+      .dao-left .popup__check label 
+         width: 100%
+      .dao-left__list
+         flex-direction: column
 @media screen and (max-width: 390px)
    .btn2
       clip-path: polygon(0% 23%, 5% 0%, 95% 0%, 100% 20%, 100% 84%, 95% 100%, 5% 100%, 0 80%)

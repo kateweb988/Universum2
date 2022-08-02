@@ -25,18 +25,38 @@ nav
       color: #FFFFFF
 .nav__btn 
   margin-left: 28px
+  align-items: center
+  margin-left: 28px
+  width: 180px
+  display: flex
+  justify-content: center
 .nav__right 
   align-items: center
   position: relative
   top: 5px
-.nav__link
-  display: block
-  margin-left: 10px
-  p 
+nav, footer
+  .nav__link
+    display: flex
+    margin-left: 10px
+    width: 50px
+    height: 54px
     transition: 0.5s
-  &:hover 
-    #one
-        fill: #CE20F3
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    clip-path: polygon(0% 24%, 50% 0%, 100% 22%, 100% 78%, 50% 100%, 100% 100%, 50% 100%, 0 78%)
+    &:nth-child(3)
+      .icon 
+        width: 40px
+    .icon
+      width: 25px
+      height: 100%
+      transition: 0.5s
+      path 
+        transition: 0.5s
+    &:hover 
+      transition: 0.5s
+      background: #CE20F3
 .header 
   position: relative
   &__soc 
@@ -70,6 +90,8 @@ nav
   z-index: 2
   .nav__socials
     margin-top: 17px
+    p 
+      transition: 0.5s
     a 
       display: flex
       align-items: center
