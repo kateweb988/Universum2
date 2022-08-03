@@ -1920,44 +1920,45 @@ input[type=radio]:checked+label:after
          &_one
             .my-wrap__sub
                opacity: 1
-            .my-wrap__item:after
-               opacity: 1
-               clip-path: polygon(92% 27%, 43% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%)
+            .my-wrap__item
+               background: url(img/border_1.svg) no-repeat center center
          &_two
             .my-wrap__sub
                opacity: 1
-            .my-wrap__item:after
+            .my-wrap__item
+               background: url(img/border_2.svg) no-repeat center center
+            // .my-wrap__item:after
+            //    opacity: 1
+            //    clip-path: polygon(100% 135%, 46% 0%, 100% -36%, 124% 90%, 106% 100%, 38% 52%, -38% 94%, 71% 120%)
+         &_three
+            .my-wrap__sub
                opacity: 1
-               clip-path: polygon(100% 135%, 46% 0%, 100% -36%, 124% 90%, 106% 100%, 38% 52%, -38% 94%, 71% 120%)
+            .my-wrap__item
+               background: url(img/border_3.svg) no-repeat center center
+            // .my-wrap__item:after
+            //    opacity: 1
+            //    clip-path: polygon(100% 135%, 46% 0%, 100% -36%, 124% 90%, 106% 100%, 38% 52%, -38% 94%, 71% 120%)
          &_four
             .my-wrap__sub
                opacity: 1
-            .my-wrap__item:after
-               opacity: 1
-               clip-path: polygon(100% 135%, -102% 5%, 95% -36%, 129% 80%, -93% 128%, 38% 52%, -38% 94%, 71% 120%)
+            .my-wrap__item
+               background: url(img/border_4.svg) no-repeat center center
+         &_none 
+            .my-wrap__item
+               background: url(img/border-none.svg) no-repeat center center
          &:last-child
             margin-right: 0
       &__item 
          margin-bottom: 3px
          width: 66px
          height: 79px
-         background: #080930
+         // background: #080930
+         background: url(img/border-none.svg) no-repeat
          border-radius: 3px
          display: flex
          position: relative
          align-items: center
          justify-content: center
-         clip-path: polygon(0% 25%, 50% 0%, 50% 0%, 100% 23%, 100% 79%, 53% 100%, 50% 100%, 0px 79%)
-         &:after 
-            opacity: 0
-            content: ""
-            display: block
-            position: absolute
-            width: 100%
-            height: 100%
-            left: 1px
-            top: 3px
-            background: url(img/after.svg) no-repeat
    &-top 
       display: flex
       justify-content: space-between
@@ -2030,7 +2031,7 @@ input[type=radio]:checked+label:after
             border-top: 6px solid #F32046
 .my-wrap__sub
    display: flex
-   background: url(img/sub.svg) no-repeat
+   background: url(img/sub.svg) no-repeat center center
    width: 19px
    height: 20px
    align-items: center
