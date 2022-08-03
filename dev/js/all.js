@@ -91,134 +91,134 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   };
 // }(jQuery));
-$('.items__slider').slick({
-  dots: false,
-  infinite: false,
-  arrows: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow: '<button type="button" class="slick-prev"><img src="css/img/left-slider.svg" class="svg"></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="css/img/right-slider.svg" class="svg"></button>',
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        dots: false,
-        arrows: false,
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-      }
-    }
-  ]
+// $('.items__slider').slick({
+//   dots: false,
+//   infinite: false,
+//   arrows: false,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   prevArrow: '<button type="button" class="slick-prev"><img src="css/img/left-slider.svg" class="svg"></button>',
+//   nextArrow: '<button type="button" class="slick-next"><img src="css/img/right-slider.svg" class="svg"></button>',
+//   responsive: [
+//     {
+//       breakpoint: 1199,
+//       settings: {
+//         dots: false,
+//         arrows: false,
+//         slidesToShow: 2,
+//       }
+//     },
+//     {
+//       breakpoint: 991,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 1,
+//       }
+//     },
+//     {
+//       breakpoint: 576,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 1,
+//       }
+//     }
+//   ]
 
-});
-$('.my-slider').slick({
-  dots: false,
-  infinite: false,
-  arrows: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow: '<button type="button" class="slick-prev"><img src="css/img/left-slider.svg" class="svg"></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="css/img/right-slider.svg" class="svg"></button>',
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        dots: false,
-        arrows: true,
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-      }
-    }
-  ]
+// });
+// $('.my-slider').slick({
+//   dots: false,
+//   infinite: false,
+//   arrows: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   prevArrow: '<button type="button" class="slick-prev"><img src="css/img/left-slider.svg" class="svg"></button>',
+//   nextArrow: '<button type="button" class="slick-next"><img src="css/img/right-slider.svg" class="svg"></button>',
+//   responsive: [
+//     {
+//       breakpoint: 1199,
+//       settings: {
+//         dots: false,
+//         arrows: true,
+//         slidesToShow: 2,
+//       }
+//     },
+//     {
+//       breakpoint: 991,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 2,
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 1,
+//       }
+//     },
+//     {
+//       breakpoint: 576,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 1,
+//       }
+//     }
+//   ]
 
-});
-$('.articmodal-close').click(function (e) {
-  $.arcticmodal('close');
+// });
+// $('.articmodal-close').click(function (e) {
+//   $.arcticmodal('close');
 
-});
-$('.p1').click(function (e) {
-  e.preventDefault();
-  $('#p1').arcticmodal({
-  });
-});
-$('.inner-block__btn').click(function (e) {
-  e.preventDefault();
-  $('#p2').arcticmodal({
-  });
-});
-// Accordeon
-$(document).ready(function () {
-  $(".set > a").on("click", function () {
-    if ($(this).hasClass('active')) {
-      $(this).removeClass("active");
-      $(this).siblings('.content').slideUp(200);
-      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
-    }
-    else {
-      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
-      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
-      $(".set > a").removeClass("active");
-      $(this).addClass("active");
-      $('.content').slideUp(200);
-      $(this).siblings('.content').slideDown(200);
-    }
-    return false
-  });
+// });
+// $('.p1').click(function (e) {
+//   e.preventDefault();
+//   $('#p1').arcticmodal({
+//   });
+// });
+// $('.inner-block__btn').click(function (e) {
+//   e.preventDefault();
+//   $('#p2').arcticmodal({
+//   });
+// });
+// // Accordeon
+// $(document).ready(function () {
+//   $(".set > a").on("click", function () {
+//     if ($(this).hasClass('active')) {
+//       $(this).removeClass("active");
+//       $(this).siblings('.content').slideUp(200);
+//       $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+//     }
+//     else {
+//       $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+//       $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+//       $(".set > a").removeClass("active");
+//       $(this).addClass("active");
+//       $('.content').slideUp(200);
+//       $(this).siblings('.content').slideDown(200);
+//     }
+//     return false
+//   });
 
-});
-// Scrollto
-$('.go_to').click(function () { // ловим клик по ссылке с классом go_to
-  var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-  if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-    $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 0 }, 800); // анимируем скроолинг к элементу scroll_el
-  }
-  return false; // выключаем стандартное действие
-});
-// Burger
-$('.menu .button').click(function (event) {
-  $(this).toggleClass('active');
-  $('.burger').toggleClass('active');
-  return false;
-});
+// });
+// // Scrollto
+// $('.go_to').click(function () { // ловим клик по ссылке с классом go_to
+//   var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+//   if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+//     $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 0 }, 800); // анимируем скроолинг к элементу scroll_el
+//   }
+//   return false; // выключаем стандартное действие
+// });
+// // Burger
+// $('.menu .button').click(function (event) {
+//   $(this).toggleClass('active');
+//   $('.burger').toggleClass('active');
+//   return false;
+// });
 // jQuery('img.svg').each(function () {
 //   var $img = jQuery(this);
 //   var imgID = $img.attr('id');
