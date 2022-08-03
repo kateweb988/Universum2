@@ -187,12 +187,14 @@
    .slick-list
       overflow: visible
 .items__el
+   width: 420px
+   flex-direction: column
    height: auto
    padding: 45px 30px 20px
    text-align: center
    position: relative
    display: flex
-   margin: 0 8px
+   margin: 10px auto
    clip-path: polygon(0% 11%, 9% 0%, 91% 0%, 100% 11%, 100% 89%, 91% 100%, 8% 100%, 0 89%)
    &:hover
       .items__name
@@ -1630,6 +1632,8 @@ input[type=radio]:checked+label:after
          transition: 0.5s
          padding-bottom: 8px
          border-top: 1px solid transparent
+         &:hover 
+            background: #c5eaff !important
          &:after 
             content: ""
             font-weight: 800
@@ -1671,6 +1675,9 @@ input[type=radio]:checked+label:after
          clip-path: polygon(0% 23%, 50% 0%, 50% 0%, 100% 23%, 100% 79%, 51% 100%, 50% 100%, 0px 79%)
          &:nth-child(5n)
             margin-right: 0
+         &:hover
+            .my-mission__btn
+               display: none
          &.none 
             background: #080930
             display: flex
@@ -1700,6 +1707,7 @@ input[type=radio]:checked+label:after
             display: none
          &.claim .my-mission__btn
             background: #1D844D
+            display: flex
             &:hover 
                background: transparent
                border-top: 1px solid #1D844D
@@ -1709,8 +1717,8 @@ input[type=radio]:checked+label:after
                content: "Claim"
          &.mint .my-mission__btn
             background: #F29420
+            display: flex
             &:hover 
-               background: transparent
                border-top: 1px solid #F29420
                &:after 
                   color: #F29420
@@ -1718,6 +1726,7 @@ input[type=radio]:checked+label:after
                content: "mint"
          &.stake .my-mission__btn
             background: #9C17C2
+            display: flex
             &:hover 
                background: transparent
                border-top: 1px solid #9C17C2
@@ -1727,6 +1736,7 @@ input[type=radio]:checked+label:after
                content: "Stake"
          &.unstake .my-mission__btn
             background: #F2202E
+            display: flex
             &:hover 
                background: transparent
                border-top: 1px solid #F2202E
@@ -1814,7 +1824,7 @@ input[type=radio]:checked+label:after
                path
                   fill: #42B5FC
    &-slider 
-      width: 2000px
+      width: 100%
       .slick-track
          display: flex
       .slick-arrow
@@ -1949,7 +1959,7 @@ input[type=radio]:checked+label:after
       margin-bottom: 20px
       &__btn 
          width: 148px
-         height: 55px
+         height: 56px
          margin-left: 10px
          margin-top: 20px
       &__num 

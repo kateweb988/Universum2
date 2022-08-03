@@ -593,12 +593,14 @@ div {
 }
 
 .items__el {
+  width: 420px;
+  flex-direction: column;
   height: auto;
   padding: 45px 30px 20px;
   text-align: center;
   position: relative;
   display: flex;
-  margin: 0 8px;
+  margin: 10px auto;
   clip-path: polygon(0% 11%, 9% 0%, 91% 0%, 100% 11%, 100% 89%, 91% 100%, 8% 100%, 0 89%);
 }
 .items__el:hover .items__name {
@@ -2331,6 +2333,9 @@ input[type=radio]:checked + label:after {
   padding-bottom: 8px;
   border-top: 1px solid transparent;
 }
+.my-mission__btn:hover {
+  background: #c5eaff !important;
+}
 .my-mission__btn:after {
   content: "";
   font-weight: 800;
@@ -2379,6 +2384,9 @@ input[type=radio]:checked + label:after {
 .my-mission__item:nth-child(5n) {
   margin-right: 0;
 }
+.my-mission__item:hover .my-mission__btn {
+  display: none;
+}
 .my-mission__item.none {
   background: #080930;
   display: flex;
@@ -2393,6 +2401,7 @@ input[type=radio]:checked + label:after {
 }
 .my-mission__item.claim .my-mission__btn {
   background: #1D844D;
+  display: flex;
 }
 .my-mission__item.claim .my-mission__btn:hover {
   background: transparent;
@@ -2406,9 +2415,9 @@ input[type=radio]:checked + label:after {
 }
 .my-mission__item.mint .my-mission__btn {
   background: #F29420;
+  display: flex;
 }
 .my-mission__item.mint .my-mission__btn:hover {
-  background: transparent;
   border-top: 1px solid #F29420;
 }
 .my-mission__item.mint .my-mission__btn:hover:after {
@@ -2419,6 +2428,7 @@ input[type=radio]:checked + label:after {
 }
 .my-mission__item.stake .my-mission__btn {
   background: #9C17C2;
+  display: flex;
 }
 .my-mission__item.stake .my-mission__btn:hover {
   background: transparent;
@@ -2432,6 +2442,7 @@ input[type=radio]:checked + label:after {
 }
 .my-mission__item.unstake .my-mission__btn {
   background: #F2202E;
+  display: flex;
 }
 .my-mission__item.unstake .my-mission__btn:hover {
   background: transparent;
@@ -2540,7 +2551,7 @@ input[type=radio]:checked + label:after {
   fill: #42B5FC;
 }
 .my-slider {
-  width: 2000px;
+  width: 100%;
 }
 .my-slider .slick-track {
   display: flex;
@@ -2701,7 +2712,7 @@ input[type=radio]:checked + label:after {
 }
 .my-top__btn {
   width: 148px;
-  height: 55px;
+  height: 56px;
   margin-left: 10px;
   margin-top: 20px;
 }
@@ -3988,6 +3999,7 @@ nav .nav__link:hover, footer .nav__link:hover {
     margin-top: 42px;
   }
   .items__el {
+    width: 100%;
     padding: 45px 10px;
     clip-path: polygon(0% 6%, 9% 0%, 91% 0%, 100% 5%, 100% 95%, 92% 100%, 7% 100%, 0 95%);
   }
