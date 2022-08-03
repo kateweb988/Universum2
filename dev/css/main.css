@@ -585,8 +585,11 @@ div {
 }
 
 .items__slider {
-  margin: 50px -8px 0;
-  width: 1743px;
+  margin: 50px auto 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .items__slider .slick-list {
   overflow: visible;
@@ -600,7 +603,7 @@ div {
   text-align: center;
   position: relative;
   display: flex;
-  margin: 10px auto;
+  margin: 10px;
   clip-path: polygon(0% 11%, 9% 0%, 91% 0%, 100% 11%, 100% 89%, 91% 100%, 8% 100%, 0 89%);
 }
 .items__el:hover .items__name {
@@ -671,8 +674,9 @@ div {
 }
 
 .items__wrap {
-  width: 1920px;
-  padding-right: 200px;
+  width: 100%;
+  padding-right: 0;
+  margin: 0 auto;
 }
 
 .accordion-container {
@@ -2552,6 +2556,9 @@ input[type=radio]:checked + label:after {
 }
 .my-slider {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .my-slider .slick-track {
   display: flex;
@@ -3202,9 +3209,6 @@ nav .nav__link:hover, footer .nav__link:hover {
   .my-mission__item {
     margin-right: 17px;
   }
-  .my-slider {
-    width: 2250px;
-  }
   .my-slider .slick-next {
     left: 52.5%;
   }
@@ -3242,9 +3246,6 @@ nav .nav__link:hover, footer .nav__link:hover {
   }
   .my-top__item {
     max-width: 200px;
-  }
-  .my-slider {
-    width: 2450px;
   }
   .my-slider .slick-next {
     left: 44%;

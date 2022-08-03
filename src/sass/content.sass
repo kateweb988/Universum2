@@ -182,19 +182,24 @@
    .container
       max-width: 1763px
 .items__slider
-   margin: 50px -8px 0
-   width: 1743px
+   margin: 50px auto 0
+   width: 100%
+   display: flex
+   flex-wrap: wrap
+   justify-content: center
    .slick-list
       overflow: visible
 .items__el
    width: 420px
+   // flex: 1 0 auto
+   // max-width: 420px
    flex-direction: column
    height: auto
    padding: 45px 30px 20px
    text-align: center
    position: relative
    display: flex
-   margin: 10px auto
+   margin: 10px 
    clip-path: polygon(0% 11%, 9% 0%, 91% 0%, 100% 11%, 100% 89%, 91% 100%, 8% 100%, 0 89%)
    &:hover
       .items__name
@@ -245,8 +250,9 @@
    font-size: 16px
    line-height: 120%
 .items__wrap
-   width: 1920px
-   padding-right: 200px
+   width: 100%
+   padding-right: 0
+   margin: 0 auto
 .accordion-container
    position: relative
    height: auto
@@ -1825,6 +1831,9 @@ input[type=radio]:checked+label:after
                   fill: #42B5FC
    &-slider 
       width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
       .slick-track
          display: flex
       .slick-arrow
